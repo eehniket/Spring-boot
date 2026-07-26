@@ -1,0 +1,11 @@
+REST API - REPRESENTATITIONAL STATE TRANSFER APPLICATION PROGRAMMING INTERFACE
+Basically user aur client ke beech ka ek representational state jisme state transfer(information transfer) hota hai.
+Ek package banega controller ka jisme REST Controller ki class hogi.
+This class is marked by a special Annotation "@RestController" which will make it a special component and bean bhi banaega uska.
+Special Components jo Http requests ko handle karte hai.
+RequestMapping ko get,put,post ke function pe annotate krte hai so that uss mapping ka bhi ek father index ho. ex. /journal -> /abc.
+**IMP* Methods in Controller class should always remain public so spring and other external http requests can acces or invoke them.
+Post method ke parameters me @requestbody annotation ka kaam hai ki wo data lega request se aur usko java object me convert krega jo use ho sake.
+url me request parameter send krna is through ? ex localhost:8080/id?name=aniket emphasis on "?name=aniket"
+@pathvariable is used to covert data sent in pathvariable into useable format.
+
